@@ -2,6 +2,9 @@
 Show the implementation of a document flow using the tree table component of PrimeNG
 Approx. time to implement: 1.5 h.
 
+## Document Flow Component
+[Component](src/app/document-flow/)
+
 # CBT PrimeNG Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.

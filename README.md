@@ -6,6 +6,12 @@ Approx. time to implement: 1.5 h.
 - [Component](src/app/document-flow/)
 - [Service](src/app/document-flow.service.ts)
 
+## Test Page
+- [Test](dist/cbt_primeng_test/index.html)
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
 # CBT PrimeNG Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.

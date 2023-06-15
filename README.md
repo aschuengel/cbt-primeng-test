@@ -4,7 +4,7 @@ Approx. time to implement: 1.5 h.
 
 ## Components & Services
 - [Component](src/app/document-flow/)
-- [Service](src/app/document-flow-service.ts)
+- [Service](src/app/document-flow.service.ts)
 
 # CBT PrimeNG Test
 

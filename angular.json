@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cbt_primimeng": {
+    "cbt_primeng_test": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cbt_primimeng",
+            "outputPath": "dist/cbt_primeng_test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cbt_primimeng:build:production"
+              "browserTarget": "cbt_primeng_test:build:production"
             },
             "development": {
-              "browserTarget": "cbt_primimeng:build:development"
+              "browserTarget": "cbt_primeng_test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cbt_primimeng:build"
+            "browserTarget": "cbt_primeng_test:build"
           }
         },
         "test": {

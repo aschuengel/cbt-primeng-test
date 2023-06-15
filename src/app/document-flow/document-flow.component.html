@@ -1,0 +1,28 @@
+<p-toast></p-toast>
+
+<p-treeTable [value]="data" [scrollable]="true" [tableStyle]="{'min-width':'50rem'}">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Name</th>
+            <th>Document Number</th>
+            <th>Type</th>
+            <th>Created</th>
+            <th>Updated</th>
+            <th>Owner</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+        <tr [ttRow]="rowNode">
+            <td>
+                <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
+                {{ rowData.name }}
+            </td>
+            <td><a routerLink=""
+                    (click)="click(rowData.type, rowData.documentNumber)"><span class="pi pi-hashtag"></span> {{rowData.documentNumber}}</a></td>
+            <td>{{ rowData.type }}</td>
+            <td>{{ rowData.created|date:'short' }}</td>
+            <td>{{ rowData.updated|date:'short' }}</td>
+            <td><a routerLink="" (click)="clickOwner(rowData.owner)"> <span class="pi pi-user"></span> {{ rowData.owner }}</a></td>
+        </tr>
+    </ng-template>
+</p-treeTable>
